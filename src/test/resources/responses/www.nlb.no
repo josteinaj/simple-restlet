@@ -1,0 +1,344 @@
+
+
+
+<!DOCTYPE html>
+<html lang="nb-no">
+    <head id="ctl00_Head1"><title>
+	NLB - NLB
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="fileshare/filarkivroot/favicon.png" /><link rel="apple-touch-icon" href="fileshare/filarkivroot/favicon-iphone.png" /><link href="/Customers/Nlbs/nlbb/Skin/print.css" rel="stylesheet" type="text/css" media="print" /> 
+		<!-- Enable if mobileversion is current 
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script src="/Customers/NLBS/NLBB/Scripts/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/Customers/Default/Scripts/jquery.bnet.js"></script>
+        <script src="http://speech.leseweb.dk/script/jm4162yxpda9oari85dn.js" type="text/javascript"></script>
+        <link href="/Customers/nlbs/NLBB/Skin/_styles.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/breadcrumb.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/commentlist.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/default.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/forms.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/login.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/mediaBank.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/menus.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/print.css" rel="stylesheet" type="text/css" />
+<link href="/Customers/nlbs/NLBB/Skin/tags.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Customers/nlbs/NLBB/Scripts/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/Customers/nlbs/NLBB/Scripts/jquery.pngFix.js"></script>
+<script type="text/javascript" src="/Customers/nlbs/NLBB/Scripts/xbehaviour.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-15072425-1']);
+_gaq.push(['_trackPageview']);
+(function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+ 
+	<!--[if lt IE 7 ]> <body class=" orange ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" orange ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" orange ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" orange ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> <body class=" orange"> <!--<![endif]-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var fontSize = "small";
+            if(bNet.cookie.read("fontSize") != 'undefined')
+                fontSize = bNet.cookie.read("fontSize");
+            $("body").addClass(fontSize);
+        });
+    </script>
+
+        <form name="aspnetForm" method="post" action="/" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGSTteDblZzZohH1chZEP0Fdl82dQAiB0b9WuFNvP4kqGw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=QS7ioST67-v9k-SaOHPo42hrF25wH5HxDZzvyRHT6zPQUW92Ct9L_S5pkKwU0j745j-R8AxOIihA94oFOLTW3kjJUbXMFsAaF2UD9J0hcEw1&amp;t=634735063993736711" type="text/javascript"></script>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3anb-NO%3a89093640-ae6b-44c3-b8ea-010c934f8924%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+            
+            
+            <div id="OuterWrapper">
+                <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+                
+                
+
+<div id="Header" class="">
+       
+    <a href="/" title="Til startsiden" id="Logo">
+		<img src="/Fileshare/Filarkivroot/logoer/logo_green.png" alt="NLB logo" />
+	</a>
+    <div id="HeaderRight">
+        <h2 id="HeaderText">Biblioteket for lyd og punkt</h2>
+        <div id="MenuExtras">
+
+            <ul id="LanguagesMenu"><li class=" active first"><a href="/">Bokmål</a></li><li class=""><a href="/en/about-nlb/facts/facts-about-nlb/">English</a></li><li class=" last"><a href="/nn/om-nlb/fakta/fakta-om-nlb/">Nynorsk</a></li></ul>
+
+            <fieldset class="SearchContainer">
+                <input type="text" id="SearchBox" value=""/>
+            </fieldset>
+            <div id="FontSizeMenu">
+                <a class="smallFont" data-size="small">a</a>
+                <a class="mediumFont" data-size="medium">a</a>
+                <a class="largeFont" data-size="large">a</a>
+            </div>
+            
+			<a class="sitemap extrasIcons" href="/nettstedskart/">
+                <img src="/Customers/Nlbs/NLBB/Skin/Images/sitemap_icon.png" alt="Sidekart" />
+            </a>
+            
+            <a class="extrasIcons" href="http://www.addthis.com/bookmark.php">
+                <img src="/Customers/NLBS/NLBB/Skin/Images/openshareicon-16x16.png" width="16" height="16" border="0" alt="Del" />
+            </a>
+            <a class="facebook extrasIcons" href="http://www.facebook.com/pages/Oslo/NLB-Norsk-lyd-og-blindeskriftbibliotek/328029534808" title="Følg oss på Facebook">
+                <img src="/Customers/Nlbs/NLBB/Skin/Images/facebook-icon-16x16.gif" alt="Følg oss på Facebook" />
+            </a>
+            
+                <a class="extrasIcons" href="/?feed=Rss" title="Rss feed">
+                    <img src="/Customers/Nlbs/NLBB/Skin/Images/rss.png"  alt="Rss Feed"/>
+                </a>
+            
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4bc31d1d7bb65ae9"></script>
+        </div>
+    </div>
+    <ul class="menu level1 menuitems8" id="Menu">
+	<li class="item1"><a href="http://websok.nlb.no/cgi-bin/websok" >Boksøk/MappaMi</a></li>
+	<li class="item2 expandable"><a href="/brukerstoette/brukerstoette/" >Brukerstøtte</a></li>
+	<li class="item3 expandable"><a href="/boktips/anbefalinger/" >Boktips</a></li>
+	<li class="item4 expandable"><a href="/student/studielitteratur/" >Student</a></li>
+	<li class="item5 expandable"><a href="/ung/anbefalinger/" >Ung</a></li>
+	<li class="item6 expandable"><a href="/barn/anbefalinger/" >Barn</a></li>
+	<li class="item7 expandable"><a href="/laaneinfo/hvem-kan-laane/" >Låneinfo</a></li>
+	<li class="item8 expandable last"><a href="/om-nlb/fakta/fakta-om-nlb/" >Om NLB</a></li>
+</ul>
+
+ 
+    <div id="Menu2Wrapper">
+        
+
+ 
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#SearchBox').keypress(function (event) {
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if (keycode == '13') {
+                event.preventDefault();
+                var redirectLocation = "/soek/?q=" + $('#SearchBox').val();
+                window.location = redirectLocation;
+            }
+        });
+    });
+
+    $("#FontSizeMenu a").click(function () {
+        var fontSize = $(this).attr("data-size");
+
+        $("body").removeClass("small");
+        $("body").removeClass("medium");
+        $("body").removeClass("large");
+
+        $("body").addClass(" " + fontSize);
+        bNet.cookie.create("fontSize", fontSize, 365);
+    });
+</script>
+
+
+
+                <div id="InnerWrapper" class=" ">
+					<div id="ContentWrapper" class="clearfix">
+                        
+                        
+						<div id="ContentContainer">
+							
+    
+<div id="BookList">
+    <ul id="BoxList">
+        
+            <li>
+                
+                    <div class="boxListImageWrapper">
+                        <a href="/boeker/ordensforstyrrelse/">
+                            <img src="/fileshare/filarkivroot/Bokforsider/Ordensforstyrrelse.jpg" title="Bilde av Ordensforstyrrelse" alt="Bilde av Ordensforstyrrelse" />
+                        </a>
+                    </div>
+                
+                <h2 class="boxListItemName color"> 
+                    <a href="/boeker/ordensforstyrrelse/">Richard Yates</a>  
+                </h2>
+                
+                <h3 class="boxListItemDescription">
+                    <a href="/boeker/ordensforstyrrelse/">Ordensforstyrrelse»</a>
+                </h3>
+                
+            </li>
+        
+            <li>
+                
+                    <div class="boxListImageWrapper">
+                        <a href="/boeker/historien-om-pi/">
+                            <img src="/fileshare/filarkivroot/Bokforsider/historien om PI 2.jpg" title="Bilde av Historien om Pi" alt="Bilde av Historien om Pi" />
+                        </a>
+                    </div>
+                
+                <h2 class="boxListItemName color"> 
+                    <a href="/boeker/historien-om-pi/">Yann Martel</a>  
+                </h2>
+                
+                <h3 class="boxListItemDescription">
+                    <a href="/boeker/historien-om-pi/">Historien om Pi»</a>
+                </h3>
+                
+            </li>
+        
+            <li>
+                
+                    <div class="boxListImageWrapper">
+                        <a href="/boeker/jens-stoltenberg/">
+                            <img src="http://krydder.bib.no/0346/5187809.bilde.1327539562.s.jpg" title="Bilde av Jens Stoltenberg" alt="Bilde av Jens Stoltenberg" />
+                        </a>
+                    </div>
+                
+                <h2 class="boxListItemName color"> 
+                    <a href="/boeker/jens-stoltenberg/">Thor Viksveen</a>  
+                </h2>
+                
+                <h3 class="boxListItemDescription">
+                    <a href="/boeker/jens-stoltenberg/">Jens Stoltenberg»</a>
+                </h3>
+                
+            </li>
+        
+            <li>
+                
+                    <div class="boxListImageWrapper">
+                        <a href="/boeker/duevokterne/">
+                            <img src="/fileshare/filarkivroot/Bokforsider/Duevokterne.jpg" title="Bilde av Duevokterne" alt="Bilde av Duevokterne" />
+                        </a>
+                    </div>
+                
+                <h2 class="boxListItemName color"> 
+                    <a href="/boeker/duevokterne/">Alice Hoffman</a>  
+                </h2>
+                
+                <h3 class="boxListItemDescription">
+                    <a href="/boeker/duevokterne/">Duevokterne»</a>
+                </h3>
+                
+            </li>
+        
+            <li>
+                
+                    <div class="boxListImageWrapper">
+                        <a href="/boeker/i-dette-treet/">
+                            <img src="http://krydder.bib.no/0022/1103085.bilde.1327457489.s.jpg" title="Bilde av I dette treet" alt="Bilde av I dette treet" />
+                        </a>
+                    </div>
+                
+                <h2 class="boxListItemName color"> 
+                    <a href="/boeker/i-dette-treet/">Katarina Kieri og Per Nilsson</a>  
+                </h2>
+                
+                <h3 class="boxListItemDescription">
+                    <a href="/boeker/i-dette-treet/">I dette treet»</a>
+                </h3>
+                
+            </li>
+        
+            <li>
+                
+                    <div class="boxListImageWrapper">
+                        <a href="/boeker/mytene-som-skapte-norge/">
+                            <img src="/fileshare/filarkivroot/Bokforsider/Mytene som skapte Norge.jpg" title="Bilde av Mytene som skapte Norge" alt="Bilde av Mytene som skapte Norge" />
+                        </a>
+                    </div>
+                
+                <h2 class="boxListItemName color"> 
+                    <a href="/boeker/mytene-som-skapte-norge/">Gro Steinsland</a>  
+                </h2>
+                
+                <h3 class="boxListItemDescription">
+                    <a href="/boeker/mytene-som-skapte-norge/">Mytene som skapte Norge»</a>
+                </h3>
+                
+            </li>
+        
+    </ul>
+    <div id="Paging">
+        
+            <a class="next" href="?Skip=6">Flere bøker»</a>
+        
+        <div class="clear"></div>
+    </div>
+</div>
+    
+
+						</div>
+					</div>
+                </div>
+                
+                
+
+<div id="Footer">
+    
+    <p id="ContactInfo">
+        Norsk lyd- og blindeskriftbibliotek<br />
+        Postboks 2764, Solli, 0204 Oslo<br />
+        Tlf.: 22 06 88 10<br />
+        E-post: <a href="mailto:utlaan@nlb.no" title=" NLB">utlaan@nlb.no</a><br />
+        Org. Nummer: 970 145 567<br />
+    </p>
+
+    <div id="SocialLinks">
+        <a href="http://www.bnet.no" title="CMS" target="_blank">CMS</a> : 
+        <a href="http://www.bennettnext.no/" title="Webdesign" target="_blank">Webdesign</a> : 
+        <a href="http://www.bennettnext.no" title="Bennett AS" target="_blank"><strong>BENNETT</strong></a>
+    </div>
+</div>
+            </div>
+            
+        </form>
+    </body>
+</html>
+
+
