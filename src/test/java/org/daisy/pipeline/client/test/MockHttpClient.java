@@ -16,11 +16,11 @@ public class MockHttpClient implements HttpClient {
 
 	public HttpResponse get(String url) throws HttpException {
 		File responseFile = new File("src/test/resources/responses/"+url.replaceAll("^\\w+:\\/+", ""));
-		if (Http.debug) System.out.println("Reading mock response: "+responseFile.getAbsolutePath());
+		if (Http.debug()) System.out.println("Reading mock response: "+responseFile.getAbsolutePath());
 		try {
 			return new HttpResponse(200, "OK", "Mock object retrieved successfully", "application/xml", new FileInputStream(responseFile));
 		} catch (FileNotFoundException e) {
-			if (Http.debug) System.out.println("Unable to read mock response for: "+url);
+			if (Http.debug()) System.out.println("Unable to read mock response for: "+url);
 			e.printStackTrace();
 			return null;
 		}

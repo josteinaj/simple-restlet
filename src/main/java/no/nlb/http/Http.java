@@ -13,19 +13,47 @@ import org.w3c.dom.Document;
  * @author jostein
  */
 public class Http {
-
+	
+	// Singleton
+	private Http(){
+		httpClient = new HttpClientImpl();
+	}
+	private static Http http = null;
+	private static Http instance() {
+		if (http == null)
+			http = new Http();
+		return http;
+	}
+	
 	/** Set to true to enable debugging */
-	public static boolean debug = false;
-
-	private static HttpClient httpClient = new HttpClientImpl();
-
+	private boolean debug = false;
+	
+	private HttpClient httpClient = null;
+	
+	/* -------------- static below -------------------- */
+	
+	/**
+	 * If you'd like to initialize the HttpClient separately, you can use this method.
+	 */
+	public static void init() {
+		instance();
+	}
+	
 	/**
 	 * Change the Http Client implementation.
 	 * 
 	 * @param httpClientImpl
 	 */
 	public static void setHttpClientImplementation(HttpClient httpClientImpl) {
-		Http.httpClient = httpClientImpl;
+		instance().httpClient = httpClientImpl;
+	}
+	
+	public static void debug(boolean debug) {
+		instance().debug = debug;
+	}
+	
+	public static boolean debug() {
+		return instance().debug;
 	}
 
 	/**
@@ -37,8 +65,8 @@ public class Http {
 	 * @throws HttpException 
 	 */
 	public static HttpResponse get(String url) throws HttpException {
-		if (Http.debug) System.err.println("getting: "+url);
-		return httpClient.get(url);
+		if (instance().debug) System.out.println("getting: "+url);
+		return instance().httpClient.get(url);
 	}
 
 	/**
@@ -50,8 +78,8 @@ public class Http {
 	 * @throws HttpException 
 	 */
 	public static HttpResponse post(String url, Document xml) throws HttpException {
-		if (Http.debug) System.err.println("posting XML: "+url);
-		return httpClient.post(url, xml);
+		if (instance().debug) System.out.println("posting XML: "+url);
+		return instance().httpClient.post(url, xml);
 	}
 
 	/**
@@ -63,8 +91,8 @@ public class Http {
 	 * @throws HttpException 
 	 */
 	public static HttpResponse post(String url, String text) throws HttpException {
-		if (Http.debug) System.err.println("posting text: "+url);
-		return httpClient.post(url, text);
+		if (instance().debug) System.out.println("posting text: "+url);
+		return instance().httpClient.post(url, text);
 	}
 
 	/**
@@ -76,8 +104,8 @@ public class Http {
 	 * @throws HttpException 
 	 */
 	public static HttpResponse post(String url, Map<String,File> parts) throws HttpException {
-		if (Http.debug) System.err.println("posting multipart: "+url);
-		return httpClient.post(url, parts);
+		if (instance().debug) System.out.println("posting multipart: "+url);
+		return instance().httpClient.post(url, parts);
 	}
 
 	/**
