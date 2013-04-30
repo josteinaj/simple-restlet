@@ -31,7 +31,7 @@ import org.w3c.dom.Document;
  */
 public class HttpClientImpl implements HttpClient {
 	
-	private Client client = new Client(Protocol.HTTPS); // TODO: add support for HTTPS WS ?
+	private Client client = new Client(Protocol.HTTP); // TODO: add support for HTTPS WS ?
 	
 	/**
 	 * Implementation of HttpClient.get(String)
