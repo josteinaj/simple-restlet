@@ -128,5 +128,16 @@ public class Http {
 		
 		return url;
 	}
+	
+	/**
+	 * Set the timeout for HTTP requests.
+	 * 
+	 * @param ms The timeout in milliseconds.
+	 * @throws HttpException 
+	 */
+	public static void setTimeout(Long ms) throws HttpException {
+		if (instance().debug) System.out.println("set timeout to "+ms+" milliseconds");
+		instance().httpClient.setTimeout(ms);
+	}
 
 }

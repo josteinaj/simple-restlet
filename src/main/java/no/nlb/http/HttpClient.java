@@ -47,4 +47,12 @@ public interface HttpClient {
 	 * @throws HttpException 
 	 */
 	public HttpResponse post(String url, Map<String,File> parts) throws HttpException;
+	
+	/**
+	 * Set the timeout for HTTP requests.
+	 * 
+	 * @param ms The timeout in milliseconds.
+	 * @throws HttpException 
+	 */
+	public void setTimeout(Long ms) throws HttpException;
 }

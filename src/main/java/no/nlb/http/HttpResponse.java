@@ -1,15 +1,9 @@
 package no.nlb.http;
 
-import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.InputStream;
-import java.io.Reader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -39,13 +33,14 @@ public class HttpResponse {
 	 * @param statusDescription
 	 * @param bodyStream
 	 */
-	public HttpResponse(int status, String statusName, String statusDescription, String contentType, InputStream bodyStream) {
+	public HttpResponse(int status, String statusName, String statusDescription, String contentType, String bodyText) {
 		this.status = status;
 		this.statusName = statusName;
 		this.statusDescription = statusDescription;
 		this.contentType = contentType;
-		this.bodyStream = bodyStream;
+		this.bodyStream = null;
 		this.bodyXml = null;
+		this.bodyText = bodyText;
 	}
 	
 	/**
@@ -57,32 +52,32 @@ public class HttpResponse {
 		if (bodyText != null)
 			return bodyText;
 		
-		if (bodyStream != null) {
-            Writer writer = new StringWriter();
- 
-            char[] buffer = new char[1024];
-            try {
-                Reader reader = new BufferedReader(new InputStreamReader(bodyStream, "UTF-8"));
-                int n;
-                while ((n = reader.read(buffer)) != -1) {
-                    writer.write(buffer, 0, n);
-                }
-            } catch (UnsupportedEncodingException e) {
-				// unable to open stream
-				e.printStackTrace();
-			} catch (IOException e) {
-				// unable to read buffer
-				e.printStackTrace();
-			} finally {
-            	try {
-					bodyStream.close();
-					bodyStream = null;
-				} catch (IOException e) {
-					throw new HttpException("Unable to close stream while reading response body", e);
-				}
-            }
-            bodyText = writer.toString();
-        }
+//		if (bodyStream != null) {
+//            Writer writer = new StringWriter();
+// 
+//            char[] buffer = new char[1024];
+//            try {
+//                Reader reader = new BufferedReader(new InputStreamReader(bodyStream, "UTF-8"));
+//                int n;
+//                while ((n = reader.read(buffer)) != -1) {
+//                    writer.write(buffer, 0, n);
+//                }
+//            } catch (UnsupportedEncodingException e) {
+//				// unable to open stream
+//				e.printStackTrace();
+//			} catch (IOException e) {
+//				// unable to read buffer
+//				e.printStackTrace();
+//			} finally {
+//            	try {
+//					bodyStream.close();
+//					bodyStream = null;
+//				} catch (IOException e) {
+//					throw new HttpException("Unable to close stream while reading response body", e);
+//				}
+//            }
+//            bodyText = writer.toString();
+//        }
 		
 		else if (bodyXml != null) {
 	    	try {

@@ -3,7 +3,13 @@ package org.daisy.pipeline.client.test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Map;
+import java.util.Scanner;
 
 import no.nlb.http.HttpClient;
 import no.nlb.http.Http;
@@ -18,8 +24,12 @@ public class MockHttpClient implements HttpClient {
 		File responseFile = new File("src/test/resources/responses/"+url.replaceAll("^\\w+:\\/+", ""));
 		if (Http.debug()) System.out.println("Reading mock response: "+responseFile.getAbsolutePath());
 		try {
-			return new HttpResponse(200, "OK", "Mock object retrieved successfully", "application/xml", new FileInputStream(responseFile));
+			return new HttpResponse(200, "OK", "Mock object retrieved successfully", "application/xml", readFile(responseFile));
 		} catch (FileNotFoundException e) {
+			if (Http.debug()) System.out.println("Unable to read mock response for: "+url);
+			e.printStackTrace();
+			return null;
+		} catch (IOException e) {
 			if (Http.debug()) System.out.println("Unable to read mock response for: "+url);
 			e.printStackTrace();
 			return null;
@@ -38,4 +48,21 @@ public class MockHttpClient implements HttpClient {
 		return null;
 	}
 
+	public void setTimeout(Long ms) throws HttpException {}
+	
+	
+	private String readFile(File file) throws IOException {
+	    StringBuilder fileContents = new StringBuilder((int)file.length());
+	    Scanner scanner = new Scanner(file);
+	    String lineSeparator = System.getProperty("line.separator");
+
+	    try {
+	        while(scanner.hasNextLine()) {        
+	            fileContents.append(scanner.nextLine() + lineSeparator);
+	        }
+	        return fileContents.toString();
+	    } finally {
+	        scanner.close();
+	    }
+	}
 }
