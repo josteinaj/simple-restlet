@@ -1,3 +1,7 @@
+**NOTE: This project is not being maintained**
+
+<br/><br/><br/>
+
 # Simple Restlet Wrapper Library
 
 A hazzle-free library for making basic HTTP requests. For instance, to get the HTML of this projects frontpage as a String, you could do this:
